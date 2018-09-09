@@ -15,8 +15,11 @@ Creating a first hyperledger fabric network through Amazon AWS
   <li><b> Creating first network - installing prerequisites </b> </li>
       <ol> <li> <b> Install cURL </b> </li> 
                     <p> Type on the terminal cURL command to check if its installed or run cURL --version. If it is not installed                           you can install it through below command </p>
-  <p> sudo apt-get install curl </p>
+                            <p> sudo apt-get install curl </p>
           <li> <b> Install Docker and Docker Compose </b> </li>
+                    <p> I followed this article: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04 </p>
+    and <p> https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04 </p>
+  
           <li> <b> Install GO Programming Language </b> </li>
           <li> <b> Install Node.js Runtime and NPM </b> </li>
           <li> <b> Install Python </b> </li>
@@ -24,5 +27,5 @@ Creating a first hyperledger fabric network through Amazon AWS
   
       </ol>
       
-   </ol>
+  
 
