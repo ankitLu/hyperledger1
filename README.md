@@ -46,8 +46,8 @@ curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.0 </p>
   <p> ./byfn.sh up </p>
   <p>  If you’d like to run through this tutorial with node chaincode, pass the following command instead:
 
-# we use the -l flag to specify the chaincode language
-# forgoing the -l flag will default to Golang
+<i> we use the -l flag to specify the chaincode language </i>
+<i> forgoing the -l flag will default to Golang </i>
 
 ./byfn.sh up -l node </p>
 <p> Bring down the network with the command ./byfn.sh down </p>
