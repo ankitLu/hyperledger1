@@ -15,12 +15,11 @@ Creating a first hyperledger fabric network through Amazon AWS
   <li><b> Creating first network - installing prerequisites </b> </li>
       <ol> <li> <b> Install cURL </b> </li> 
                     <p> Type on the terminal cURL command to check if its installed or run cURL --version. If it is not installed                           you can install it through below command </p>
-                            <p> sudo apt-get install curl </p>
-          <li> <b> Install Docker and Docker Compose </b> </li>
-                    <p> I followed this article: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04 </p>
+  <p> sudo apt-get install curl </p>
+  <li> <b> Install Docker and Docker Compose </b> </li>
+  <p> I followed this article: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04 </p>
     and <p> https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04 </p>
-  
-          <li> <b> Install GO Programming Language </b> </li>
+  <li> <b> Install GO Programming Language </b> </li>
           <p> Run the command sudo curl -O https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz </p>
           <p> Easy article explanation here https://medium.com/@patdhlk/how-to-install-go-1-9-1-on-ubuntu-16-04-ee64c073cd79 </p>
           <p> Don't forget to set the path. Run command export PATH=$PATH:$GOPATH/bin </p>
