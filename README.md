@@ -24,13 +24,32 @@ Creating a first hyperledger fabric network through Amazon AWS
           <p> Easy article explanation here https://medium.com/@patdhlk/how-to-install-go-1-9-1-on-ubuntu-16-04-ee64c073cd79 </p>
           <p> Don't forget to set the path. Run command export PATH=$PATH:$GOPATH/bin </p>
           <li> <b> Install Node.js Runtime and NPM </b> </li>
+           <p> https://websiteforstudents.com/install-the-latest-node-js-and-nmp-packages-on-ubuntu-16-04-18-04-lts/ </p>
           <li> <b> Install Python </b> </li>
           <p> Retrieve the Python version 2.7, which is goof for running Fabric Node.js SDK, by using command sudo apt-get install python </p>
           <p> You can also check python version by command "python --version" </p>
           <p> You are essentially done for installing the prerequisites. You can refer to detailed installation article here 
           https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html </p>
-  
+          </ol>
+  <li> <b> Installing Sample Binaries and Docker Images </b> </li>
+  <p> Once you are ready, and in the directory into which you will install the Fabric Samples and binaries, go ahead and execute the following command:
+curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.0 </p>
+<p> then, curl -sSL http://bit.ly/2ysbOFE | bash -s <fabric> <fabric-ca> <thirdparty>
+  curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.0 1.2.0 0.4.10 </p>
+  <p> I faced an issue of Docker permission denied while trying to connect to the Docker daemon socket </p>
+  <p> I solved the issue with command sudo usermod -a -G docker $USER . Don't forget to completely log out of your account and log back in (if in doubt, reboot!):</p>
+  <p> Detailed solution at: https://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/ </p>
+  <li> <b> Running first network </b> </li>
+  <p> cd fabric-samples/first-network </p>
+  <p> Ready to give it a go. Run the command: ./byfn.sh generate </p>
+  <p> This command generates all the certificates. And after this, bring up the network </p>
+  <p> ./byfn.sh up </p>
+  <p>  If you’d like to run through this tutorial with node chaincode, pass the following command instead:
 
-      
+# we use the -l flag to specify the chaincode language
+# forgoing the -l flag will default to Golang
+
+./byfn.sh up -l node </p>
+<p> Bring down the network with the command ./byfn.sh down </p>
   
 
