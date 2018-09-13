@@ -21,11 +21,17 @@ Creating a first hyperledger fabric network through Amazon AWS
     and <p> https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04 </p>
   
           <li> <b> Install GO Programming Language </b> </li>
+          <p> Run the command sudo curl -O https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz </p>
+          <p> Easy article explanation here https://medium.com/@patdhlk/how-to-install-go-1-9-1-on-ubuntu-16-04-ee64c073cd79 </p>
+          <p> Don't forget to set the path. Run command export PATH=$PATH:$GOPATH/bin </p>
           <li> <b> Install Node.js Runtime and NPM </b> </li>
           <li> <b> Install Python </b> </li>
+          <p> Retrieve the Python version 2.7, which is goof for running Fabric Node.js SDK, by using command sudo apt-get install python </p>
+          <p> You can also check python version by command "python --version" </p>
+          <p> You are essentially done for installing the prerequisites. You can refer to detailed installation article here 
+          https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html </p>
   
-  
-      </ol>
+
       
   
 
